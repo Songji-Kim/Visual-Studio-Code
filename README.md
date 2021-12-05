@@ -1,3 +1,4 @@
 # Visual-Studio-Code
-Section2が提出版のフォルダです。
+Section2はチーズVerのフォルダ
+課題提出が自社サービスのフォルダ
 09_金誠智
