@@ -1,0 +1,47 @@
+.head{
+    padding: 30px;
+}
+
+.head-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+.mainBox{
+    padding: auto;
+    text-align: center;
+}
+
+.main-img{
+    margin: auto;
+}
+
+.player{
+    display: flex;
+    padding: auto;
+    text-align: center;
+}
+
+.player1{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+.player2{
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+}
+
+.p{
+    padding: 10px;
+}
+
+.button{
+    padding: 30px;
+    text-align: center;
+    margin: auto;
+}   
+

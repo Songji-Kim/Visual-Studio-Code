@@ -8,21 +8,48 @@ $("#aa").on("click", function () {
     console.log(janken, "じゃんけん");  
 
     if (janken === 1){
-        $("p1").html("グー");
-        $("p1").css("color", "blue");
+        $("p1").html('player1');
         $("p2").html('<img src="img/gu-.PNG">');
+        $("p3").html("グー");
+        $("p3").css("color", "blue");
         console.log("グー");
     } else if (janken === 2){
-        $("p1").html("チョキ");
-        $("p1").css("color", "blue");
+        $("p1").html('player1');
         $("p2").html('<img src="img/choki.PNG">');
+        $("p3").html("チョキ");
+        $("p3").css("color", "blue");
         console.log("チョキ");
     } else if (janken === 3){
-        $("p1").html("パー");
-        $("p1").css("color", "pink");
+        $("p1").html('player1');
         $("p2").html('<img src="img/pa-.PNG">');
+        $("p3").html("パー");
+        $("p3").css("color", "pink");
         console.log("パー");
     }
+});
 
+$("#aa").on("click", function () {
+    const janken2 = Math.floor(Math.random()*3+1);
+    console.log(janken2, "じゃんけん");  
+
+    if (janken2 === 1){
+        $("p4").html('player2');
+        $("p5").html('<img src="img/gu-.PNG">');
+        $("p6").html("グー");
+        $("p6").css("color", "blue");
+        console.log("グー");
+    } else if (janken2 === 2){
+        $("p4").html('player2');
+        $("p5").html('<img src="img/choki.PNG">');
+        $("p6").html("チョキ");
+        $("p6").css("color", "blue");
+        console.log("チョキ");
+    } else if (janken2 === 3){
+        $("p4").html('player2');
+        $("p5").html('<img src="img/pa-.PNG">');
+        $("p6").html("パー");
+        $("p6").css("color", "pink");
+        console.log("パー");
+    }
   });
 

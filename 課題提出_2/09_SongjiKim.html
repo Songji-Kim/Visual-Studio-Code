@@ -10,18 +10,36 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-      <header>
-          <h1 class="head">じゃんけんアプリ</h1>
+      <header class="head">
+          <h1 class="head-text">じゃんけんアプリ</h1>
         </header>
 
-      <img class="main-img" src="img/janken.png" alt="メイン">
+        <div class="mainBox">
+            <img class="main-img" src="img/janken.png" alt="メイン">
+        </div>
 
-      <main>
-            <p1></p1>
-            <p2></p2>
-         <!-- ボタンを作成 -->
+      <main class="player">
+         <div class="player1"> 
+            <p1 class="p"></p1>
+            <p2 class="p"></p2>
+            <p3 class="p"></p3>
+        </div>
+
+        <div class="player2">
+            <p4 class="p"></p4>
+            <p5 class="p"></p5>
+            <p6 class="p"></p6>
+        </div>
+    </main>
+
+        <div class="button">
+            <!-- ボタンを作成 -->
             <button id="aa">じゃんけんする</button> 
-      </main>
+            </div>
+        </div>
+
+
+ 
   
     <!-- このコメントの行より下にjsフォルダのtest.jsを読み込みましょう🤗 1.授業でやります!-->
     <script src="09_SongjiKim.js"></script>
