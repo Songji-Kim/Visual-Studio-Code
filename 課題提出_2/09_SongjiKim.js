@@ -53,3 +53,20 @@ $("#aa").on("click", function () {
     }
   });
 
+//   じぇんけんの結果表示
+
+$("#aa").on("click", function () {
+    const kekka = "じゃんけん結果";
+    console.log(kekka);  
+    if (janken === janken2 ){
+        $("p7").html('あいこ');
+    } else if (janken === 1 && janken2 === 2){
+        $("p7").html('勝ち');
+    } else if (janken === 2 && janken2 === 3){
+        $("p7").html('勝ち');
+    } else if (janken === 3 && janken2 === 1){
+        $("p7").html('勝ち');
+    } else {
+        $("p7").html('負け');
+    }
+});
