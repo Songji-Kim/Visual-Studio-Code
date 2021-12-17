@@ -1,4 +1,3 @@
 # Visual-Studio-Code
-Section2はチーズVerのフォルダ
-課題提出が自社サービスのフォルダ
+課題提出3が「Javascript-LocalStrage」のフォルダ
 09_金誠智
