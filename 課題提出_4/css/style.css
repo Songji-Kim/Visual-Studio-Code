@@ -1,9 +1,28 @@
-HEAD
+body {
+  background-color: #c7e8fa;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-top: 3rem;
+}
+
+#uname{
+  width:300px
+}
+
+#text{
+  margin-left: 50px;
+  margin-top: 20px;
+  width: 300px;
+  height: 200px;
+}
+
 div#output p:nth-child(odd) {
     margin-right: auto;
     text-align: left;
     width: fit-content;
-    background: cyan;
+    background: rgb(204, 204, 204);
     border-radius: 10px;
     padding: 10px;
     box-sizing: border-box;
@@ -11,7 +30,7 @@ div#output p:nth-child(odd) {
 
 div#output p:nth-child(even) {
     margin-left: auto;
-    background: pink;
+    background: rgb(134, 1, 1);
     text-align: right;
     width: fit-content;
     border-radius: 10px;
@@ -20,7 +39,7 @@ div#output p:nth-child(even) {
 }
 
 .message {
-    width: 500px;
+    width: 800px;
     border-radius: 10px;
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
@@ -69,4 +88,3 @@ div#output p:nth-child(even) {
     opacity: .6;
   }
 
-  
