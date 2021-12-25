@@ -1,3 +1,4 @@
+HEAD
 div#output p:nth-child(odd) {
     margin-right: auto;
     text-align: left;
@@ -66,4 +67,73 @@ div#output p:nth-child(even) {
 
   .delete:hover {
     opacity: .6;
+
+div#output p:nth-child(odd) {
+    margin-right: auto;
+    text-align: left;
+    width: fit-content;
+    background: cyan;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div#output p:nth-child(even) {
+    margin-left: auto;
+    background: pink;
+    text-align: right;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.message {
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
   }
+
+ .input {
+    border: 1px solid #000;
+    width: 40%;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 50px;
+  }
+
+  .update {
+    margin-left: auto;
+    width: 50px;
+    height: 50px;
+    background: pink;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    transition: all .3s;
+  }
+
+  .update:hover {
+    opacity: .6;
+    cursor: pointer;
+  }
+
+  .delete {
+    width: 50px;
+    height: 50px;
+    background: gray;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  .delete:hover {
+    opacity: .6;
+}
