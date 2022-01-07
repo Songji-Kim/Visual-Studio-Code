@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -70,77 +69,3 @@
 
     
 </body>
-=======
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherNews</title>
-    <style>
-        #jview{
-        font-weight: bold;
-        }
-    </style>
-</head>
-<body>
-    <main>
-        <h1>天気</h1>
-        <!-- 時刻表示用 -->
-        <div id="jview"></div>
-
-        <!-- 天気表示用 -->
-        <div id="tview"></div>
-
-        <a href="https://news.mynavi.jp/techplus/article/zerojavascript-8/">参考URL</a>
-    </main>
- 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-    <script src="https://polyfill.io/v3/polyfill.min.js?features=fetch" crossorigin="anonymous"></script>
-
-    <script>
-    // 1．時刻を表示
-        
-   
-    
-    // 現在時刻をconsoleに表示
-        fetch('https://api.aoikujira.com/time/get.php') 
-        .then(response => response.text()) 
-        .then(data => console.log(data))
-        .then(data => document.write(jview));
-        // .then(data => innerHTML=(jview));
-        
-    </script>
-
-    <script>
-
-     // 天気APIにアクセス --- (*1)
-     const api = 'https://api.aoikujira.com/tenki/week.php?fmt=json&city=319'
-     fetch(api) 
-     .then(res => res.json()) 
-     .then(data => tenki(data)) 
-     
-     // 結果を表示 --- (*2) 
-     function tenki(data) { 
-         let t = '' 
-         const tokyo = data[319] // 東京の情報 --- (*3) 
-         // 1日ずつのデータを表示 --- (*4) 
-         for (let row of tokyo) { console.log(row) // デバッグ表示
-            t += ` <h3>${row['date']}の天気</h3> 
-            <ul>
-                <li>${row['forecast']}</li>
-                <li>${row['maxtemp']}℃</li>
-                <li>${row['mintemp']}℃</li>
-                <li>降水確率:${row['poptimes']}%</li>
-            </ul> ` 
-        }
-         document.write(t) 
-    } 
-    </script>
-
-    
-</body>
->>>>>>> e25418c860233b262f31a42fa555c44e1c931265
-</html>
