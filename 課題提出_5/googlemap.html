@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -50,4 +51,58 @@
 
     
 </body>
+=======
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>googlemap</title>
+    <style>
+        #target{
+
+        width: 550px;
+        height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>google maps</h1>
+        <!-- <a href="https://ipo-cal.appspot.com/apispec.html">参考URL</a> -->
+
+        <div id="target"></div>
+
+    </main>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    
+  
+
+    <script
+     src="https://maps.googleapis.com/maps/api/js?language=ja&region=JP&key=AIzaSyAcUC48ZdQv3h2YYWwO3Jj3gKr2Z-TgwDk
+     &callback=getMap" 
+    async defer></script>
+    <script>
+        function getMap(){
+            'use strict';
+
+        var target = document.getElementById('target');
+        var map;
+        var tokyo = {lat: 35.681167, lng:139.767052};
+        map = new google.maps.Map(target,{
+            center: tokyo,
+            zoom: 10,
+        });
+        }
+
+    </script>
+
+
+    
+</body>
+>>>>>>> e25418c860233b262f31a42fa555c44e1c931265
 </html>
